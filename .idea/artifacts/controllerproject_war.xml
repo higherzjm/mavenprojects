@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="controllerproject:war">
+    <output-path>$PROJECT_DIR$/controllerproject/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>controllerproject</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="zjmBaseSpringBoot.war">
+      <element id="artifact" artifact-name="controllerproject:war exploded" />
+    </root>
+  </artifact>
+</component>

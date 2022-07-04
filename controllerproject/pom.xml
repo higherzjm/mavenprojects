@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.zjm</groupId>
+    <name>springBoot-controller控制器</name>
+    <artifactId>controllerproject</artifactId>
+    <version>1.0.1-RELEASE</version>
+    <packaging>war</packaging>
+    <parent>
+        <groupId>com.zjm</groupId>
+        <artifactId>models</artifactId>
+        <version>0.0.1</version>
+    </parent>
+    <dependencies>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>serviceproject</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+    <!--仓库管理，要向仓库中分布新东西在这里配置-->
+    <!--<distributionManagement>
+        <repository>
+            <id>zjmrepository</id>&lt;!&ndash;仓库id,必须要跟私服上建的仓库id一致&ndash;&gt;
+            <name>zjmrepository Repository2</name> &lt;!&ndash;可随便写&ndash;&gt;
+            <url>http://127.0.0.1:8081/repository/zjmrepository/</url> &lt;!&ndash;url后面是仓库id，要匹配&ndash;&gt;
+        </repository>
+    </distributionManagement>-->
+ <!--   <build>
+        <finalName>zjmBaseSpringBoot</finalName>
+        <defaultGoal>tomcat:run</defaultGoal>
+        <plugins>
+            <plugin>
+                <groupId>org.opoo.maven</groupId>
+                <artifactId>tomcat9-maven-plugin</artifactId>
+                <version>3.0.1</version>
+                <configuration>
+                    <port>8088</port>
+                    <path>/zjmTest</path>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>-->
+    <build>
+        <finalName>zjmBaseSpringBoot</finalName>
+        <defaultGoal>tomcat:run</defaultGoal>   <plugins>
+        <plugin>
+            <groupId>org.opoo.maven</groupId>
+            <artifactId>tomcat9-maven-plugin</artifactId>
+            <version>3.0.1</version>
+            <configuration>
+                <port>8088</port>
+                <path>/zjmTest</path>
+            </configuration>
+        </plugin>
+    </plugins>
+    </build>
+
+</project>
